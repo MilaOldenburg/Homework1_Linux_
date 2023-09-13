@@ -1,0 +1,20 @@
+localhost:~# mkdir -p /home/animals/dogs /home/animals/cats /home/animals/fish
+localhost:~# touch /home/animals/dogs/pluto.txt /home/animals/cats/garfield.txt
+/home/animals/fish/nemo.txt /tmp/adam.txt /tmp/evA.txt
+localhost:~# mkdir /home/humans && cp /tmp/adam.txt  /home/humans
+localhost:~# mv /tmp/evA.txt /opt/eve.txt
+localhost:~# mv /opt/eve.txt /home/humans/
+localhost:~# tree /home/
+/home/
+├── animals
+│   ├── cats
+│   │   └── garfield.txt
+│   ├── dogs
+│   │   └── pluto.txt
+│   └── fish
+│       └── nemo.txt
+└── humans
+    ├── adam.txt
+    └── eve.txt
+ 
+5 directories, 5 files
